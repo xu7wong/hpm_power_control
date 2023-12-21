@@ -1,0 +1,5 @@
+file build/prj001.elf
+target remote localhost:3333
+load
+break main
+break main.c:84

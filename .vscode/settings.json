@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "hpm_common.h": "c",
+        "hpm_debug_console.h": "c",
+        "hpm_pmp_drv.h": "c"
+    }
+}
