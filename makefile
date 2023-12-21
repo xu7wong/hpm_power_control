@@ -1,10 +1,11 @@
-OUT ?= prj001
+OUT ?= app
 BUILD_DIR = build
 CHIP_NAME = HPM6280
 FLASH_SIE = 4M
 
 SRCS = \
 app/src/main.c \
+app/adc_trigger.c \
 bsp/board.c \
 soc/$(CHIP_NAME)/boot/hpm_bootheader.c \
 soc/$(CHIP_NAME)/toolchains/reset.c \
@@ -19,7 +20,8 @@ drivers/src/hpm_uart_drv.c \
 drivers/src/hpm_adc16_drv.c \
 drivers/src/hpm_gptmr_drv.c \
 drivers/src/hpm_pwm_drv.c \
-drivers/src/hpm_pmp_drv.c
+drivers/src/hpm_pmp_drv.c \
+drivers/src/hpm_dma_drv.c
 
 ASM_SRCS = \
 soc/$(CHIP_NAME)/toolchains/gcc/start.S
